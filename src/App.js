@@ -2,7 +2,7 @@ import "./App.css";
 import logo from "./assets/image001.png";
 function App() {
   const showFile = () => {
-    const preview = document.getElementById("show-text");
+    const preview = document.getElementById("text");
     const file = document.querySelector("input[type=file]").files[0];
     const reader = new FileReader();
 
@@ -23,7 +23,7 @@ function App() {
       <span>Select a Book File : </span>
       <div>
         <input type="file" onChange={showFile} />
-        <div id="show-text">Choose text File</div>
+        <div id="text">Choose text File</div>
       </div>
     </div>
   );
